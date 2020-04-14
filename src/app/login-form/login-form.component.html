@@ -1,0 +1,17 @@
+<h2 class="text-center">Key in your details:</h2>
+<hr>
+<form (ngSubmit) = 'submitForm()' loginForm="ngForm" >
+    <div class="row">
+        <div class="col-md-12">
+            <div class="form-group">
+                <label for="search">Username </label><br>
+                <input  name="name" type="text" id="name" class="form-control" [(ngModel)] = "newSearch" >
+            </div>
+        </div>
+        <div>
+            <button type="submit" class="btn btn-success">Submit</button> 
+        </div>
+    </div>
+</form>
+
+

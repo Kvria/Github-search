@@ -1,0 +1,32 @@
+.card2 {
+    background-color: black;
+    margin: 20px;
+}
+p{
+    color: teal;
+    font-family: 'Comic Neue', cursive;
+}
+h4{
+    color: gray;
+    font-family: 'Comic Neue', cursive;
+}
+h5{
+    color: teal;
+    font-style: italic;
+    font-family: 'Comic Neue', cursive;
+}
+img {
+    margin: 20px;
+    height: 300px;
+    padding-left: 33%;
+    padding-right: 33%;
+}
+.card-body2{
+    text-align: center;
+}
+#search {
+    text-align: center;
+}
+.card{
+    background-color: yellow;
+}

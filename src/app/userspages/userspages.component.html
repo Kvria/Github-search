@@ -1,0 +1,19 @@
+<div class="card">
+  <img src={{user.avatar_url}} alt="Avatar" >
+  <div class="card-body2">
+    <h4><b>Username: {{user.login}}</b></h4>
+    <p>followers: {{user.followers}}</p>
+    <p>following: {{user.following}}</p>
+    <p>Number of repositories: {{user.public_repos}}</p>
+  </div>
+  <div class="card2">
+    <div class="card-body" *ngFor="let repository of repositories">
+      <h5 class="card-title"><b>{{repository.name}}</b></h5>
+      <p class="card-text">{{repository.description}}</p>
+      <p class="card-text" appHighlight >Last update {{repository.updated_at}}</p>
+    </div>
+  </div>
+  <div id = "search">
+    <app-login-form (addNewSearch) = "findUser($event)"></app-login-form>
+  </div>
+</div>
